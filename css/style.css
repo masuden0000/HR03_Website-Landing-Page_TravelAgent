@@ -66,6 +66,7 @@ a {
 
 .nav-item {
     margin-left: 20px;
+    color: #0E2A5D;
 }
 
 .nav-link {
@@ -105,12 +106,14 @@ a {
     font-size: 2.25rem;
     line-height: 48px;
     font-weight: 700;
+    color: #0064FF;
     margin: 64px 0px 16px 0px;
 }
 
 .title p {
     font-size: 1rem;
     font-weight: 400;
+    color: #7C7C7C;
     margin: 0px 0px 32px 0px;
 }
 
@@ -198,6 +201,7 @@ aside h2 {
 
 aside p {
     font-size: 14px;
+    color: #7C7C7C;
     font-weight: 400;
     margin-bottom: 56px;
 }
@@ -264,6 +268,7 @@ footer ol li {
     font-size: 14px;
     padding-left: 35px;
     margin: 20px 0px 30px 0px;
+    color: #656565;
 }
 
 footer ol li::before {
@@ -297,7 +302,7 @@ footer ol li::before {
 .our-package h1 {
     background-color: #c6d1db;
     width: 100%;
-    color: #292929;
+    color: #482ff7;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -316,6 +321,7 @@ footer ol li::before {
     flex-direction: row;
     align-items: start;
     flex: 25%;
+    margin-left: 20px;
 }
 
 .our-package ul li i {
@@ -332,6 +338,7 @@ footer ol li::before {
     font-size: 14px;
     margin: 0px 0px 10px 0px;
     width: 300px;
+    color: #656565;
 }
 
 /* MAIN - CALL US */
@@ -346,6 +353,7 @@ footer ol li::before {
 
 .call-us h1 {
     font-size: 36px;
+    color: #482ff7;
     font-weight: 700;
     margin: 56px 0px 24px 0px;
     text-align: center;
@@ -355,6 +363,7 @@ footer ol li::before {
     text-align: center;
     margin: 0px 0px 56px 0px;
     width: 60%;
+    color: #656565;
 }
 
 .call-us .button {

@@ -291,6 +291,7 @@ footer ol li::before {
     flex-direction: column;
     padding-bottom: 90px;
     border-bottom: 1px solid #292929;
+    padding-top: 80px;
 }
 
 .our-package h1 {
@@ -330,7 +331,7 @@ footer ol li::before {
 .our-package ul li div p {
     font-size: 14px;
     margin: 0px 0px 10px 0px;
-    width: 60%;
+    width: 300px;
 }
 
 /* MAIN - CALL US */
@@ -493,13 +494,26 @@ footer p {
     footer h2 {
         width: 400px;
     }
+        
+    .call-us .button {
+        width: 80%;
+    }
+    
+    .our-package ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .our-package ul li {
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 416px) {
     .home {
         display: flex;
         align-items: center;
-        
         justify-content: center;
     }
     
@@ -513,10 +527,5 @@ footer p {
     
     footer h2, footer ol{
         width: 300px;
-    }
-    
-    .our-package ul {
-        display: flex;
-        flex-direction: column;
     }
 }

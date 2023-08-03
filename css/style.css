@@ -25,7 +25,12 @@ a {
 /* HEADER */
 .header {
     border-bottom: 1px solid #E2E8F0;
-    padding: 12px 0px;
+    padding: 12px 24px 12px 0px;
+    border-radius: 0px 0px 7px 7px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #ffff;
 }
 
 .navbar {
@@ -443,10 +448,11 @@ footer p {
 
     .nav-menu.active {
         left: 0;
+        padding-bottom: 30px;
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 1rem 0;
     }
 
     .hamburger {

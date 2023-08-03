@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon-icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>BESTARI Travel Agent</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <img src="img/logo-company.png" alt="logo-company">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Our Package</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Call Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="title">
+                <h1>Top Rated E-Groceries Shop in <br>Indonesia</h1>
+                <p>Every Day with best ingredients</p>
+            </div>
+            <figure>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/Papua-indonesia.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Papua-indonesia.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Papua-indonesia.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <q>Setiap hari beli sayur buah yang fresh disini</q>
+                <div class="profile">
+                    <img src="img/profile.png" alt="">
+                    <div>
+                        <h2>Florence Hughes</h2>
+                        <p>Ibu Rumah Tangga, 28</p>
+                    </div>
+                </div>
+                <div class="element"></div>
+            </figure>
+            <aside>
+                <h2>Contact Us</h2>
+                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                <form onsubmit="return validateForm()">
+                    <label for="name">Your name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="First and last name" pattern="[A-Za-z ]+"
+                        required title="Please enter your name using alphabets only."><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required
+                        title="Please enter a valid email address."><br>
+
+                    <label for="interest">What are you interested in?</label><br>
+                    <select id="interest" name="interest" required>
+                        <option value="">Select an option</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select><br>
+
+                    <input class="button" type="submit" value="Send" />
+                </form>
+            </aside>
+            <footer>
+                <h2>
+                    Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product
+                </h2>
+                <div></div>
+                <ol>
+                    <li>Your first feature, written in the form of a benefit statement.
+                    </li>
+                    <li>Your first feature, written in the form of a benefit statement.
+                    </li>
+                    <li>Your first feature, written in the form of a benefit statement.
+                    </li>
+                </ol>
+                <div></div>
+            </footer>
+        </section>
+
+        <section class="our-package" id="our-package">
+            <h1>Our Package</h1>
+            <ul>
+                <li>
+                    <i class='fas fa-check-circle' style='font-size:36px'></i>
+                    <div>
+                        <h2>Fresh Vegetable</h2>
+                        <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+                    </div>
+                </li>
+                <li>
+                    <i class='fas fa-check-circle' style='font-size:36px'></i>
+                    <div>
+                        <h2>Fresh Fruit</h2>
+                        <p>Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</p>
+                    </div>
+                </li>
+                <li>
+                    <i class='fas fa-check-circle' style='font-size:36px'></i>
+                    <div>
+                        <h2>Instant Delivery</h2>
+                        <p>Di kirim instan Oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja
+                            kamu</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="element" style="margin-bottom: 56px;"></div>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-star" style="font-size: 36px;"></i>
+                    <div>
+                        <h2>Fresh Vegetable</h2>
+                        <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-star" style="font-size: 36px;"></i>
+                    <div>
+                        <h2>Fresh Vegetable</h2>
+                        <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-star" style="font-size: 36px;"></i>
+                    <div>
+                        <h2>Fresh Vegetable</h2>
+                        <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="call-us">
+            <h1>Your Closing Argument Headline</h1>
+            <p>Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, euismod sed justo quis, convallis
+                tincidunt risus. Phasellus fringilla odio vel erat fringilla,</p>
+            <button class="button"><a>Call To Action</a></button>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <img src="img/logo-company.png" alt="logo-company" width="180px">
+        <div class="terms">
+            <p><a>Terms of service</a></p>
+            <p><a>Privacy policy</a></p>
+        </div>
+        <p>&#169; 2023 BESTARI Travel Agent</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

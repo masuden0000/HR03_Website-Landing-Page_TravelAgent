@@ -528,4 +528,8 @@ footer p {
     footer h2, footer ol{
         width: 300px;
     }
+    
+    .our-package ul li div p{
+        width: 250px;
+    }
 }

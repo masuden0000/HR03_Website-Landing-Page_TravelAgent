@@ -76,13 +76,13 @@ a {
 }
 
 .nav-link:hover {
-    color: #482ff7;
+    color: #0064FF;
 }
 
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
-    color: #482ff7;
+    color: #0064FF;
 }
 
 /* MAIN - HOME */
@@ -111,6 +111,7 @@ a {
 }
 
 .title p {
+    text-align: center;
     font-size: 1rem;
     font-weight: 400;
     color: #7C7C7C;
@@ -295,14 +296,14 @@ footer ol li::before {
     align-items: center;
     flex-direction: column;
     padding-bottom: 90px;
-    border-bottom: 1px solid #292929;
+    border-bottom: 1px solid #E2E8F0;
     padding-top: 80px;
 }
 
 .our-package h1 {
-    background-color: #c6d1db;
+    background-color: #edf0f4;
     width: 100%;
-    color: #482ff7;
+    color: #0064FF;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -347,13 +348,13 @@ footer ol li::before {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-bottom: 1px solid #292929;
+    border-bottom: 1px solid #E2E8F0;
     padding-bottom: 56px;
 }
 
 .call-us h1 {
     font-size: 36px;
-    color: #482ff7;
+    color: #0064FF;
     font-weight: 700;
     margin: 56px 0px 24px 0px;
     text-align: center;
@@ -491,7 +492,7 @@ footer p {
     body {
         padding: 0px 20px;
     }
-    
+
     .home {
         align-items: center;
     }
@@ -503,16 +504,16 @@ footer p {
     footer h2 {
         width: 400px;
     }
-        
+
     .call-us .button {
         width: 80%;
     }
-    
+
     .our-package ul {
         display: flex;
         flex-direction: column;
     }
-    
+
     .our-package ul li {
         align-items: center;
         justify-content: center;
@@ -525,20 +526,21 @@ footer p {
         align-items: center;
         justify-content: center;
     }
-    
+
     .home {
         flex-wrap: nowrap;
     }
-    
+
     .home .title h1 {
         font-size: 32px;
     }
-    
-    footer h2, footer ol{
+
+    footer h2,
+    footer ol {
         width: 300px;
     }
-    
-    .our-package ul li div p{
+
+    .our-package ul li div p {
         width: 250px;
     }
 }

@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     padding: 0px 10rem;
+    overflow-x: hidden;
 }
 
 li {
@@ -485,5 +486,31 @@ footer p {
 
     footer h2 {
         width: 400px;
+    }
+}
+
+@media only screen and (max-width: 416px) {
+    .home {
+        display: flex;
+        align-items: center;
+        
+        justify-content: center;
+    }
+    
+    .home {
+        flex-wrap: nowrap;
+    }
+    
+    .home .title h1 {
+        font-size: 32px;
+    }
+    
+    footer h2, footer ol{
+        width: 300px;
+    }
+    
+    .our-package ul {
+        display: flex;
+        flex-direction: column;
     }
 }

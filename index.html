@@ -11,17 +11,19 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <!-- BOOSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- CUSTOM CURSOR -->
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>BESTARI Travel Agent</title>
 </head>
 
 <body>
-<!-- HEADER -->
+    <!-- HEADER -->
     <header class="header">
         <nav class="navbar">
-            <img src="img/logo-company.png" alt="logo-company">
+            <a href="#"><img src="img/logo-company.png" alt="logo-company" /></a>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
@@ -34,23 +36,25 @@
                 </li>
             </ul>
             <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <div class="container-bar">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </nav>
     </header>
-<!-- END -->
-<!-- MAIN -->
+    <!-- END -->
+    <!-- MAIN -->
     <main>
         <section class="home" id="home">
             <div class="title">
                 <h1>Bestari Travel Agent Top-6 <br>di Indonesia</h1>
                 <p>Menuju Masa Depan Pariwisata yang Aman dan Terjangkau</p>
             </div>
-            
+
             <figure>
-                <div id="carouselExampleIndicators" class="carousel slide">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -91,7 +95,7 @@
                 </div>
                 <div class="element"></div>
             </figure>
-            
+
             <aside>
                 <h2>Hubungi Kami</h2>
                 <p>Kami akan menghubungi anda 1x24 jam setelah data kami terima</p>
@@ -107,18 +111,19 @@
                     <label for="interest">Pilih Paket Liburan-Mu</label><br>
                     <select id="interest" name="interest" required>
                         <option value="">Spesial Diskon</option>
-                        <option value="option1">Option 1</option>
-                        <option value="option2">Option 2</option>
-                        <option value="option3">Option 3</option>
+                        <option value="option1">Paket 1: Liburan Indonesia + Cashback 30%</option>
+                        <option value="option2">Paket 2: Liburan Vietnam + Cashback 33%</option>
+                        <option value="option3">Paket 3: Liburan Thailand + Cashback 74%</option>
                     </select><br>
 
                     <input class="button" type="submit" value="Kirim" />
                 </form>
             </aside>
-            
+
             <footer>
                 <h2>
-                    Nikmati manfaat berlibur tanpa repot dengan mengikuti travel agent kami: penawaran harga kompetitif dan pengalaman perjalanan yang terorganisir dengan sempurna.
+                    Nikmati manfaat berlibur tanpa repot dengan mengikuti travel agent kami: penawaran harga kompetitif
+                    dan pengalaman perjalanan yang terorganisir dengan sempurna.
                 </h2>
                 <div></div>
                 <ol>
@@ -134,13 +139,14 @@
         </section>
 
         <section class="our-package" id="our-package">
-            <h1>Our Package</h1>
-            <ul>
+            <h1 class="our-package-title">Our Package</h1>
+            <ul class="point">
                 <li>
                     <i class='fas fa-check-circle' style='font-size:36px'></i>
                     <div>
                         <h2>Layanan 24 Jam</h2>
-                        <p>Dapatkan dukungan dan bantuan kapan pun Anda membutuhkannya, untuk memastikan kepuasan dan kenyamanan penuh dalam setiap situasi.</p>
+                        <p>Dapatkan dukungan dan bantuan kapan pun Anda membutuhkannya, untuk memastikan kepuasan dan
+                            kenyamanan penuh dalam setiap situasi.</p>
                     </div>
                 </li>
                 <li>
@@ -159,7 +165,7 @@
                 </li>
             </ul>
             <div class="element" style="margin-bottom: 56px;"></div>
-            <ul>
+            <ul class="point">
                 <li>
                     <i class='fa-solid fa-star' style='font-size:36px'></i>
                     <div>
@@ -185,14 +191,15 @@
         </section>
 
         <section class="call-us" id="call-us">
-            <h1>Berminat Menggunakan Jasa Kami?</h1>
-            <p>Jangan ragu menekan tombol dibawah ini karna anda akan mendapatkan pengalaman baru dan tidak pernah terlupakan</p>
+            <h1 class="call-us-title">Berminat Menggunakan Jasa Kami?</h1>
+            <p class="call-us-paragraph">Jangan ragu menekan tombol dibawah ini karna anda akan mendapatkan pengalaman baru dan tidak pernah
+                terlupakan</p>
             <button class="button"><a>Hubungi Kami</a></button>
         </section>
     </main>
-<!-- END -->
-<!-- FOOTER -->
-    <footer id="footer">
+    <!-- END -->
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
         <img src="img/logo-company.png" alt="logo-company" width="180px">
         <div class="terms">
             <p><a>Terms of service</a></p>
@@ -200,8 +207,8 @@
         </div>
         <p>&#169; 2023 BESTARI Travel Agent</p>
     </footer>
-<!-- END -->
-<!-- SCRIPT -->
+    <!-- END -->
+    <!-- SCRIPT -->
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
@@ -213,7 +220,7 @@
             removeDefaultCursor: true
         })
     </script>
-<!-- END -->
+    <!-- END -->
 </body>
 
 </html>

@@ -41,3 +41,35 @@ function validateForm() {
     return true;
 }
 
+// REVEAL SCROLL ANIMATION
+const sr = ScrollReveal({
+    distance: "30px",
+    duration: 1800,
+    reset: true,
+});
+
+sr.reveal(
+    `.title, .our-package-title, .point, .call-us-title, .call-us-paragraph`, {
+        origin: "top",
+        interval: 200,
+    }
+);
+
+sr.reveal(`.home__footer, .fitur_container`, {
+    origin: "bottom",
+    interval: 300,
+});
+
+sr.reveal(`figure, footer`, {
+    origin: "left",
+    delay: 400,
+});
+
+sr.reveal(`footer`, {
+    origin: "left",
+});
+
+sr.reveal(`aside`, {
+    origin: "right",
+    delay: 800,
+});

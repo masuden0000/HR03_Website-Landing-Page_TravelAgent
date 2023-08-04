@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    text-decoration: none;
     box-sizing: border-box;
     color: #292929;
     font-family: 'Poppins', sans-serif;
@@ -11,7 +10,6 @@ body {
     margin: 0;
     padding: 0;
     padding: 0px 10rem;
-    overflow-x: hidden;
 }
 
 li {
@@ -20,6 +18,14 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.element {
+    width: 100px;
+    height: 6px;
+    background-color: #edf0f4;
+    margin-top: 44px;
+    border-radius: 7px;
 }
 
 /* HEADER */
@@ -43,18 +49,26 @@ a {
     display: none;
 }
 
+.container-bar {
+    background-color: #0064FF;
+    padding: 6px 9px;
+    border-radius: 9px;
+}
+
 .bar {
+    opacity: 1;
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: #ffffff;   
 }
 
 .navbar img {
-    width: 11.25rem;
+    width: 180px;
+    cursor: pointer;
 }
 
 .nav-menu {
@@ -66,17 +80,41 @@ a {
 
 .nav-item {
     margin-left: 20px;
-    color: #0E2A5D;
 }
 
 .nav-link {
+    position: relative;
     font-size: 1rem;
     font-weight: 400;
-    color: #475569;
+    color: #7c7c7c !important;
+    transition: all 2s;
+}
+
+.nav-link:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #0064FF;
+    height: 1px;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.nav-link,
+.nav-link:after,
+.nav-link:before {
+    transition: all .5s;
 }
 
 .nav-link:hover {
-    color: #0064FF;
+    color: #0064FF !important;
 }
 
 .nav-logo {
@@ -103,7 +141,7 @@ a {
 
 .title h1 {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 36px;
     line-height: 48px;
     font-weight: 700;
     color: #0064FF;
@@ -112,7 +150,7 @@ a {
 
 .title p {
     text-align: center;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     color: #7C7C7C;
     margin: 0px 0px 32px 0px;
@@ -137,11 +175,10 @@ figure q {
     font-style: italic;
     color: #c6d1db;
     font-weight: 300;
-    font-size: 1rem;
-    /* background-color: red */
+    font-size: 16px;
     width: 100%;
     /* text-align: center; */
-    margin: 24px 24px 56px 0px;
+    margin: 24px 24px 56px 60px;
     padding: 0px 0px 0px 60px;
 }
 
@@ -163,29 +200,18 @@ figure .profile div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: #29323d; */
-}
-
-figure h2,
-figure p {
-    margin: 0;
-    font-size: 14px;
 }
 
 figure h2 {
+    margin: 0;
+    font-size: 14px;
     font-weight: 700;
 }
 
 figure p {
+    margin: 0;
+    font-size: 14px;
     font-style: italic;
-}
-
-.element {
-    width: 100px;
-    height: 6px;
-    background-color: #edf0f4;
-    margin-top: 44px;
-    border-radius: 7px;
 }
 
 aside {
@@ -218,7 +244,11 @@ aside form input {
     padding: 10px;
     width: 100%;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 16px;
+}
+
+aside form input::placeholder {
+    color: #c6d1db;
 }
 
 aside form select {
@@ -238,7 +268,6 @@ aside form select {
     color: #edf0f4;
 }
 
-/* HOME - FOOTER */
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -250,6 +279,7 @@ footer h2 {
     font-size: 14px;
     font-weight: 700;
     flex: 50%;
+    line-height: 20px;
 }
 
 footer div {
@@ -257,19 +287,20 @@ footer div {
 }
 
 footer ol {
-    max-width: 350px;
+    max-width: 370px;
     counter-reset: my-awesome-counter;
     list-style: none;
 }
 
 footer ol li {
+    line-height: 20px;
     margin: 0 0 0.5rem 0;
     counter-increment: my-awesome-counter;
     position: relative;
     font-size: 14px;
     padding-left: 35px;
     margin: 20px 0px 30px 0px;
-    color: #656565;
+    color: #7C7C7C;
 }
 
 footer ol li::before {
@@ -376,7 +407,7 @@ footer ol li::before {
 }
 
 /* FOOTER */
-#footer {
+.footer {
     margin-top: 32px;
     display: flex;
     align-items: center;
@@ -384,13 +415,13 @@ footer ol li::before {
     flex-direction: column;
 }
 
-footer .terms {
+.footer .terms {
     display: flex;
     flex-direction: row;
 }
 
-footer div p,
-footer p {
+.footer .terms p,
+.footer p {
     margin: 10px;
     font-size: 14px;
     padding: 0;
@@ -470,7 +501,7 @@ footer p {
         display: block;
         cursor: pointer;
     }
-
+    
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -478,11 +509,13 @@ footer p {
     .hamburger.active .bar:nth-child(1) {
         -webkit-transform: translateY(8px) rotate(45deg);
         transform: translateY(8px) rotate(45deg);
+        opacity: 1;
     }
 
     .hamburger.active .bar:nth-child(3) {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
+        opacity: 1;
     }
 
     .call-us p {
@@ -503,6 +536,10 @@ footer p {
 
     footer h2 {
         width: 400px;
+    }
+
+    figure q {
+        margin: 24px 24px 56px 24px;
     }
 
     .call-us .button {

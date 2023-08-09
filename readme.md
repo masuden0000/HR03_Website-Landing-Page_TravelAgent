@@ -16,14 +16,25 @@ Before you start...
 ## Mini Project Instructions
 As a Software Engineer, you are asked to create a website for travel agents. You must create banner, information about traveling packages on the home page. Get your client personal information and inquiries (Name, Email, Travel Destination) by using JavaScript validation. Create a website using the mockup design below (completed mockup on this link [mockup](https://app.moqups.com/Y8iumYO1yOg5P2v9YSZ4pW7u8Hs15D2s/view/page/abaae0961)) 
 
-![App Screenshot](./img/Intruction/Mockup.png)
+
+
+
+
+
+
+
+
+
+
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 Workflow:
 1. Slicing according to the mockup above
 2. Navigation in One Page 
-* Home = Banner Section (Top of Pages Content)
-* Our Package Section (Middle of Pages Content)
-* Call Action Section (Bottom of Pages Content)
+    * Home = Banner Section (Top of Pages Content)
+    * Our Package Section (Middle of Pages Content)
+    * Call Action Section (Bottom of Pages Content)
 3. Banner use auto slide using JavaScript
 4. Form Contact Us implements JavaScript Validation.
 5. Implement Responsive Design on each page (on Desktop and Mobile)
@@ -43,4 +54,36 @@ style.css (Home Page CSS)
 2. style.css (Home Page CSS)
 
 ## Expected file structure:
-![App Screenshot](./img/Intruction/File_Structure.png)
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+## Demo
+
+https://masuden0000.github.io/Mini-Project-Revou/
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/masuden0000/Mini-Project-Revou
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install live server
+
+```bash
+  go to "extensions" and install "live server"
+```
+
+Start the server
+
+```bash
+  click right on project (index.html) and click "open with live server"
+```
+

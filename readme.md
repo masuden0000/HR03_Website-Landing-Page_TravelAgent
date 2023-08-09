@@ -27,7 +27,7 @@ As a Software Engineer, you are asked to create a website for travel agents. You
 
 
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./img/Intruction/Mockup.png)
 
 Workflow:
 1. Slicing according to the mockup above
@@ -54,7 +54,7 @@ style.css (Home Page CSS)
 2. style.css (Home Page CSS)
 
 ## Expected file structure:
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./img/Intruction/File_Structure.png)
 
 ## Demo
 

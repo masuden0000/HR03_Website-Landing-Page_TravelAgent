@@ -58,7 +58,7 @@ style.css (Home Page CSS)
 
 ## Demo
 
-https://masuden0000.github.io/Mini-Project-Revou/
+[https://masuden0000.github.io/Mini-Project-Revou/](https://masuden0000.github.io/HR03_Website-Landing-Page_TravelAgent/)
 
 
 ## Run Locally
